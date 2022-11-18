@@ -1,7 +1,7 @@
 class Account():
     def __init__(self,name):
-        _account_name = name
-        _account_balance = 0 # Cause you're broke
+        self._account_name = name
+        self._account_balance = 0 # Cause you're broke
     def deposit(self, ammount):
         if ammount > 0:
             self._account_balance+=ammount
