@@ -20,4 +20,4 @@ def test_withdraw():
     assert account_one.withdraw(750000) is False
     assert account_one.withdraw(-750000) is False
     assert account_one.withdraw(0) is False
-    assert account_one.get_balance() == 500000
+    assert account_one.get_balance() == approx(500000,abs=0.001)
